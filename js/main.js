@@ -94,8 +94,8 @@ require([], function (){
 		          "mode": "repulse"
 		        },
 		        "onclick": {
-		          "enable": true,
-		          "mode": "push"
+		          "enable": false,
+		          // "mode": "push"
 		        },
 		        "resize": true
 		      },
