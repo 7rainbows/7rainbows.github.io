@@ -2232,6 +2232,9 @@ pre .javascript .function {
   height: 100%;
   overflow: hidden;
 }
+#comments {
+  padding: 0 35px;
+}
 .search {
   padding: 1em 0 0 2.5em;
 }
