@@ -254,8 +254,7 @@
 
 
     <div class="comments" id="comments">
-    <div id="vcomment" class="comment"></div>
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <!--<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>-->
     <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
     <script type="text/javascript">
@@ -264,8 +263,9 @@
 //        guest = guest.split(',').filter(function(item) {
 //            return GUEST.indexOf(item)>-1;
 //        });
-        new Valine({
-            el: '#vcomment' ,
+        var valine = new Valine();
+        valine.init({
+            el: '#comments' ,
             notify: 'false',
             verify: 'false',
             appId: 'O4LSonXhAwpmklypJ9B8e7uy-gzGzoHsz',
