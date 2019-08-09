@@ -254,23 +254,25 @@
 
 
     <div class="comments" id="comments">
+    <div id="vcomment" class="comment"></div>
     <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
     <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
     <script type="text/javascript">
-        var GUEST = ['nick','mail','link'];
-        var guest = '{{ theme.valine.guest_info }}';
-        guest = guest.split(',').filter(function(item) {
-            return GUEST.indexOf(item)>-1;
-        });
+//        var GUEST = ['nick','mail','link'];
+//        var guest = '{{ theme.valine.guest_info }}';
+//        guest = guest.split(',').filter(function(item) {
+//            return GUEST.indexOf(item)>-1;
+//        });
         new Valine({
-            el: '#comments' ,
-            verify: false,
-            notify: theme.valine.notify,
+            el: '#vcomment' ,
+            notify: 'false',
+            verify: 'false',
             appId: 'O4LSonXhAwpmklypJ9B8e7uy-gzGzoHsz',
             appKey: 'RfIhtH91aAwSkPlxvWiY7ocE',
             placeholder: 'Just go go',
             avatar: 'mm',
-            guest_info: guest,
+//            guest_info: guest,
             pageSize: '10' || 10
         });
     </script>
