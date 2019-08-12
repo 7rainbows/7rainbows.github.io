@@ -1,4 +1,4 @@
-define([], function(){
+define("mobile", function(){
 	var _isShow = false;
 	var $tag, $aboutme, $friends;
 
