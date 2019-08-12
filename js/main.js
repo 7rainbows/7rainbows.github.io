@@ -137,7 +137,6 @@ require([], function (){
 
 		);
 	});
-    require(['/js/Valine.js']);
 	var browser={
 	    versions:function(){
 	    var u = window.navigator.userAgent;
