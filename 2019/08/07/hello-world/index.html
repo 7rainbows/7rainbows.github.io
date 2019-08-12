@@ -47,21 +47,6 @@
   <script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
 
   
-  
-      <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-    new Valine({
-        el: '#comments' ,
-        notify: 'false',
-        verify: 'false',
-        appId: 'O4LSonXhAwpmklypJ9B8e7uy-gzGzoHsz',
-        appKey: 'RfIhtH91aAwSkPlxvWiY7ocE',
-        placeholder: 'Just go go',
-        avatar: 'mm',
-        pageSize: '10' || 10
-    });
-</script>
-  
 </head></html>
 <body>
   <div id="container">
@@ -254,7 +239,23 @@
     
 
 
-<div class="comments" id="comments"></div>
+    <div class="comments" id="comments">
+    <!--<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>-->
+    <script src="../../../source/js/Valine.js"></script>
+
+    <script>
+        new Valine({
+            el: '#comments' ,
+            notify: 'false',
+            verify: 'false',
+            appId: 'O4LSonXhAwpmklypJ9B8e7uy-gzGzoHsz',
+            appKey: 'RfIhtH91aAwSkPlxvWiY7ocE',
+            placeholder: 'Just go go',
+            avatar: 'mm',
+            pageSize: '10' || 10
+        });
+    </script>
+</div>
 
 
 
