@@ -240,10 +240,15 @@
 
 
     <div class="comments" id="comments">
-    <!--<script src="//unpkg.com/valine/dist/Valine.min.js"></script>-->
 
     <script>
-        window.onload = function () {
+        require.config({
+            paths : {
+                'valine' : '/js/Valine.min',
+//                'av' : "https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min"
+            }
+        })
+        require(['valine'], function(Valine) {
             new Valine({
                 el: '#comments' ,
                 notify: 'false',
@@ -254,9 +259,10 @@
                 avatar: 'mm',
                 pageSize: '10' || 10
             });
-        }
+        });
     </script>
 </div>
+
 
 
 
