@@ -1,4 +1,4 @@
-define("pc", function(){
+define([], function(){
 
 	var Tips = (function(){
 

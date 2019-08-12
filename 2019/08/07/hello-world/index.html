@@ -240,19 +240,27 @@
 
 
     <div class="comments" id="comments">
-    <script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+    <!--<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>-->
 
     <script>
-        new Valine({
-            el: '#comments' ,
-            notify: 'false',
-            verify: 'false',
-            appId: 'O4LSonXhAwpmklypJ9B8e7uy-gzGzoHsz',
-            appKey: 'RfIhtH91aAwSkPlxvWiY7ocE',
-            placeholder: 'Just go go',
-            avatar: 'mm',
-            pageSize: '10' || 10
-        });
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//unpkg.com/valine/dist/Valine.min.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0]
+            || document.getElementsByTagName('body')[0]).appendChild(ds);
+            new Valine({
+                el: '#comments' ,
+                notify: 'false',
+                verify: 'false',
+                appId: 'O4LSonXhAwpmklypJ9B8e7uy-gzGzoHsz',
+                appKey: 'RfIhtH91aAwSkPlxvWiY7ocE',
+                placeholder: 'Just go go',
+                avatar: 'mm',
+                pageSize: '10' || 10
+            });
+        })();
     </script>
 </div>
 

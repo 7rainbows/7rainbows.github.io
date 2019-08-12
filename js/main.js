@@ -1,4 +1,4 @@
-require(["pc", "mobile"], function (){
+require([], function (){
 
 	var isMobileInit = false;
 	var loadMobile = function(){
