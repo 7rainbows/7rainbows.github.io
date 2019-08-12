@@ -250,16 +250,18 @@
             ds.charset = 'UTF-8';
             (document.getElementsByTagName('head')[0]
             || document.getElementsByTagName('body')[0]).appendChild(ds);
-            new Valine({
-                el: '#comments' ,
-                notify: 'false',
-                verify: 'false',
-                appId: 'O4LSonXhAwpmklypJ9B8e7uy-gzGzoHsz',
-                appKey: 'RfIhtH91aAwSkPlxvWiY7ocE',
-                placeholder: 'Just go go',
-                avatar: 'mm',
-                pageSize: '10' || 10
-            });
+            window.onload = function () {
+                new Valine({
+                    el: '#comments' ,
+                    notify: 'false',
+                    verify: 'false',
+                    appId: 'O4LSonXhAwpmklypJ9B8e7uy-gzGzoHsz',
+                    appKey: 'RfIhtH91aAwSkPlxvWiY7ocE',
+                    placeholder: 'Just go go',
+                    avatar: 'mm',
+                    pageSize: '10' || 10
+                });
+            }
         })();
     </script>
 </div>
