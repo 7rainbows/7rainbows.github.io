@@ -2235,14 +2235,14 @@ pre .javascript .function {
 #comments {
   padding: 0 35px;
 }
-#comments .v .vinput {
-  color: #fff;
+.v .vinput {
+  color: #fff !important;
 }
-#comments .v .vlist .vcard .vcontent p {
-  color: #aaa;
+.v .vlist .vcard .vcontent p {
+  color: #aaa !important;
 }
-#comments .v .vlist .vcard .vhead .vsys {
-  background: #55556c;
+.v .vlist .vcard .vhead .vsys {
+  background: #55556c !important;
 }
 .search {
   padding: 1em 0 0 2.5em;
