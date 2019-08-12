@@ -477,7 +477,7 @@ a {
   }
   #container #comments {
     margin: 0.625rem 10px !important;
-    padding: 1rem !important;
+    padding: 0.6rem !important;
   }
 }
 .header-author {
