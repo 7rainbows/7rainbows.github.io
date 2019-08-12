@@ -2238,6 +2238,9 @@ pre .javascript .function {
 .v .vinput {
   color: #fff !important;
 }
+.v .vtext .vinput {
+  color: #313131 !important;
+}
 .v .vlist .vcard .vcontent p {
   color: #aaa !important;
 }
