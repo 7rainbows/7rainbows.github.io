@@ -228,8 +228,5 @@ require([], function (){
 	if(yiliaConfig.open_in_new == true){
 		$(".article a[href]").attr("target", "_blank")
 	}
-	if(yiliaConfig.isValine == true){
-        require(['https://unpkg.com/valine/dist/Valine.min.js']);
-	}
 
 });
