@@ -2238,6 +2238,10 @@ pre .javascript .function {
 .v .vinput {
   color: #fff !important;
 }
+.v .vinfo .vcount,
+.vnum {
+  color: #fff;
+}
 .v .vtext .vinput {
   color: #313131 !important;
 }
