@@ -475,6 +475,10 @@ a {
   #container #footer .footer-right {
     float: initial;
   }
+  #container #comments {
+    margin: 0.625rem 10px !important;
+    padding: 1rem !important;
+  }
 }
 .header-author {
   text-align: center;
