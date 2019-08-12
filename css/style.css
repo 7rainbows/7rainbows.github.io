@@ -2235,7 +2235,7 @@ pre .javascript .function {
 #comments {
   padding: 0 35px;
 }
-#comments .v * {
+.v * {
   color: #fff !important;
 }
 .search {
