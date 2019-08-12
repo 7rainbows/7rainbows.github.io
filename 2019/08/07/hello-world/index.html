@@ -240,11 +240,14 @@
 
 
     <div class="comments" id="comments">
-    <!--<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>-->
-
+    <script src="https://changyan.sohu.com/upload/changyan.js"></script>
 
     <script>
-        require("../../../source/js/Valine");
+//        var GUEST = ['nick','mail','link'];
+//        var guest = '{{ theme.valine.guest_info }}';
+//        guest = guest.split(',').filter(function(item) {
+//            return GUEST.indexOf(item)>-1;
+//        });
         new Valine({
             el: '#comments' ,
             notify: 'false',
@@ -253,6 +256,7 @@
             appKey: 'RfIhtH91aAwSkPlxvWiY7ocE',
             placeholder: 'Just go go',
             avatar: 'mm',
+//            guest_info: guest,
             pageSize: '10' || 10
         });
     </script>
