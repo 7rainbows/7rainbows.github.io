@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="7rainbows">
 <meta property="og:description" content="虽然关于js数组方法的总结网上一搜一大把，但还是想自己总结，强化一下基础。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-15T10:12:29.705Z">
+<meta property="og:updated_time" content="2019-08-15T10:18:43.795Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js数组方法总结（一）">
 <meta name="twitter:description" content="虽然关于js数组方法的总结网上一搜一大把，但还是想自己总结，强化一下基础。">
@@ -245,14 +245,12 @@
 
 
 <p><strong>toString(); valueOf()</strong><br>js有五种基本数据类型和一种引用数据类型Object，Object的每个实例都有toString();valueOf()这两种方法，<br>而数组作为引用数据类型也有这两种方法。<br>toString()  返回由数组中的每个值的字符串形式拼接而成的一个以逗号分隔的字符串 (这是人话么。。)  </p>
-<pre><code class="javascript"><span class="keyword">var</span> persons = [<span class="string">'Jerry'</span>, <span class="string">'Tom'</span>, <span class="string">'Jhon'</span>];  
-<span class="keyword">var</span> numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];  
-<span class="built_in">console</span>.log(persons.toString());  <span class="comment">//Jerry,Tom,Jhon  </span>
-<span class="built_in">console</span>.log(numbers.toString());  <span class="comment">//'1','2','3'  </span></code></pre>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> persons = [<span class="string">'Jerry'</span>, <span class="string">'Tom'</span>, <span class="string">'Jhon'</span>];  </span><br><span class="line"><span class="keyword">var</span> numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];  </span><br><span class="line"><span class="built_in">console</span>.log(persons.toString());  <span class="comment">//Jerry,Tom,Jhon  </span></span><br><span class="line"><span class="built_in">console</span>.log(numbers.toString());  <span class="comment">//'1','2','3'</span></span><br></pre></td></tr></table></figure>
+
 <p>valueOf()  返回的还是原数组  </p>
-<pre><code class="javascript"><span class="keyword">var</span> persons = [<span class="string">'Jerry'</span>, <span class="string">'Tom'</span>, <span class="string">'Jhon'</span>];  
-<span class="built_in">console</span>.log(persons.valueOf());  <span class="comment">//['Jerry', 'Tom', 'Jhon'];  </span></code></pre>
-<p>**</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> persons = [<span class="string">'Jerry'</span>, <span class="string">'Tom'</span>, <span class="string">'Jhon'</span>];  </span><br><span class="line"><span class="built_in">console</span>.log(persons.valueOf());  <span class="comment">//['Jerry', 'Tom', 'Jhon'];</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>push();</strong></p>
 
       
     </div>
