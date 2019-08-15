@@ -3,19 +3,24 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>Tag: 杂记 | 7rainbows</title>
+  <title>js数组方法总结（一） | 7rainbows</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="7rainbows">
-<meta property="og:url" content="http://yoursite.com/tags/杂记/index.html">
+  <meta name="description" content="虽然关于js数组方法的总结网上一搜一大把，但还是想自己总结，强化一下基础。">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js数组方法总结（一）">
+<meta property="og:url" content="http://yoursite.com/2019/08/14/js数组方法总结/index.html">
 <meta property="og:site_name" content="7rainbows">
+<meta property="og:description" content="虽然关于js数组方法的总结网上一搜一大把，但还是想自己总结，强化一下基础。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-08-15T08:53:18.790Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="7rainbows">
+<meta name="twitter:title" content="js数组方法总结（一）">
+<meta name="twitter:description" content="虽然关于js数组方法的总结网上一搜一大把，但还是想自己总结，强化一下基础。">
   
     <link rel="alternative" href="/atom.xml" title="7rainbows" type="application/atom+xml">
   
@@ -180,67 +185,118 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-js数组方法总结" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/07/hello-world/" class="archive-article-date">
-  	<time datetime="2019-08-07T10:56:34.000Z" itemprop="datePublished">8月 7</time>
+    <div class="article-meta">
+      <a href="/2019/08/14/js数组方法总结/" class="article-date">
+  	<time datetime="2019-08-14T09:28:12.000Z" itemprop="datePublished">2019-08-14</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/07/hello-world/">
-        Hello World
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
-      </a>
+  
+    <h1 class="article-title" itemprop="name">
+      js数组方法总结（一）
+      
     </h1>
   
 
-        <div class="article-info info-on-left">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂记/">杂记</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
 	</div>
 
-          
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/js数组方法/">js数组方法</a>
+	</div>
 
+
+        
           
-            
 <div class="counter-tag counter">
-    <span id="/2019/08/07/hello-world/" class="leancloud_visitors post-title-link"
-          style="font-size: 12px" data-flag-title="Hello World">
+    <span id="/2019/08/14/js数组方法总结/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="js数组方法总结（一）">
          &nbsp;
         view
     </span>
 </div>
 
-          
-        </div>
+        
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>虽然关于js数组方法的总结网上一搜一大把，但还是想自己总结，强化一下基础。</p>
+<a id="more"></a>
+<p><strong>Array.isArray()</strong><br>判断某个值是不是数组  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> persons = [Jerry, Tom, Jhon];  </span><br><span class="line">consolo.log(<span class="built_in">Array</span>.isArray(persons));  <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/08/07/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+
 
     
+
+
+    <div class="comments" id="comments">
+
+    <script>
+        require.config({
+            paths : {
+                'valine' : '/js/Valine.min',
+                'av' : "https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min"
+            }
+        })
+        require(['valine'], function(Valine) {
+            new Valine({
+                el: '#comments' ,
+                notify: 'false',
+                verify: 'false',
+                appId: 'O4LSonXhAwpmklypJ9B8e7uy-gzGzoHsz',
+                appKey: 'RfIhtH91aAwSkPlxvWiY7ocE',
+                placeholder: 'Just go go',
+                avatar: 'wavatar',
+                pageSize: '10' || 10
+            });
+        });
+    </script>
+</div>
+
+
+
+
+
+
+
 
 </div>
       <footer id="footer">
@@ -266,9 +322,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}
