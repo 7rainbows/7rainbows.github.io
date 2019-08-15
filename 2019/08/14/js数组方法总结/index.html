@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="7rainbows">
 <meta property="og:description" content="虽然关于js数组方法的总结网上一搜一大把，但还是想自己总结，强化一下基础。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-15T10:18:43.795Z">
+<meta property="og:updated_time" content="2019-08-15T10:50:57.447Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js数组方法总结（一）">
 <meta name="twitter:description" content="虽然关于js数组方法的总结网上一搜一大把，但还是想自己总结，强化一下基础。">
@@ -250,8 +250,11 @@
 <p>valueOf()  返回的还是原数组  </p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> persons = [<span class="string">'Jerry'</span>, <span class="string">'Tom'</span>, <span class="string">'Jhon'</span>];  </span><br><span class="line"><span class="built_in">console</span>.log(persons.valueOf());  <span class="comment">//['Jerry', 'Tom', 'Jhon'];</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>push();</strong></p>
+<p><strong>push()</strong><br>向数组最后添加一个或多个元素，改变原数组并返回改变后数组的长度。<br>末尾添加，改变原数组，返回长度  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="string">'Jerry'</span>, <span class="string">'Tom'</span>, <span class="string">'Jhon'</span>];  </span><br><span class="line"><span class="keyword">var</span> b = a.push(<span class="string">'Bob'</span>);  </span><br><span class="line"><span class="built_in">console</span>.log(a);  <span class="comment">//['Jerry', 'Tom', 'Jhon', 'Bob']  </span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">// 4</span></span><br></pre></td></tr></table></figure>
 
+<p><strong>unshift()</strong><br>向数组最前添加一个或多个元素，改变原数组并返回改变后数组的长度。<br>首部添加，改变原数组，返回长度  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="string">'Jerry'</span>, <span class="string">'Tom'</span>, <span class="string">'Jhon'</span>];  </span><br><span class="line"><span class="keyword">var</span> b = a.unshift(<span class="string">'Bob'</span>);  </span><br><span class="line"><span class="built_in">console</span>.log(a);  <span class="comment">//['Bob', 'Jerry', 'Tom', 'Jhon']  </span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">// 4</span></span><br></pre></td></tr></table></figure>
       
     </div>
     
