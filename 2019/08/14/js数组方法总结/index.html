@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="7rainbows">
 <meta property="og:description" content="虽然关于js数组方法的总结网上一搜一大把，但还是想自己总结，强化一下基础。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-15T10:50:57.447Z">
+<meta property="og:updated_time" content="2019-08-16T08:14:54.311Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js数组方法总结（一）">
 <meta name="twitter:description" content="虽然关于js数组方法的总结网上一搜一大把，但还是想自己总结，强化一下基础。">
@@ -64,7 +64,7 @@
 		</a>
 
 		<hgroup>
-		  <h1 class="header-author"><a href="/">tengyang</a></h1>
+		  <h1 class="header-author"><a href="/">7rainbows</a></h1>
 		</hgroup>
 
 		
@@ -146,7 +146,7 @@
       <nav id="mobile-nav">
   	<div class="overlay">
   		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">tengyang</h1>
+  		<h1 class="header-author js-mobile-header hide">7rainbows</h1>
   	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
@@ -154,7 +154,7 @@
 				<img lazy-src="http://i2.tiimg.com/696279/31dbbe0e601af4fc.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author">tengyang</h1>
+			  <h1 class="header-author">7rainbows</h1>
 			</hgroup>
 			
 			<p class="header-subtitle">tengyangcc@163.com</p>
@@ -255,6 +255,24 @@
 
 <p><strong>unshift()</strong><br>向数组最前添加一个或多个元素，改变原数组并返回改变后数组的长度。<br>首部添加，改变原数组，返回长度  </p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="string">'Jerry'</span>, <span class="string">'Tom'</span>, <span class="string">'Jhon'</span>];  </span><br><span class="line"><span class="keyword">var</span> b = a.unshift(<span class="string">'Bob'</span>);  </span><br><span class="line"><span class="built_in">console</span>.log(a);  <span class="comment">//['Bob', 'Jerry', 'Tom', 'Jhon']  </span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">// 4</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>pop()</strong><br>删除数组最后一个元素，改变原数组并返回所删除元素。<br>末尾删除，改变原数组，返回被删元素，</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="string">'Jerry'</span>, <span class="string">'Tom'</span>, <span class="string">'Jhon'</span>,<span class="string">'Bob'</span>];  </span><br><span class="line"><span class="keyword">var</span> b = a.pop();  </span><br><span class="line"><span class="built_in">console</span>.log(a);  <span class="comment">//['Jerry', 'Tom', 'Jhon']  </span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">// Bob</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>shift()</strong><br>删除数组第一个元素，改变原数组并返回所删除元素。<br>首部删除，改变原数组，返回被删元素，</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="string">'Jerry'</span>, <span class="string">'Tom'</span>, <span class="string">'Jhon'</span>,<span class="string">'Bob'</span>];  </span><br><span class="line"><span class="keyword">var</span> b = a.shift();  </span><br><span class="line"><span class="built_in">console</span>.log(a);  <span class="comment">//['Tom', 'Jhon', 'Bob']  </span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">// Jerry</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>reverse()</strong><br>颠倒数组中元素的顺序，改变原数组。<br>改变原数组，返回颠倒后的数组。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> ,<span class="number">5</span>];  </span><br><span class="line"><span class="keyword">var</span> b = a.reverse();  </span><br><span class="line"><span class="built_in">console</span>.log(a);  <span class="comment">//[5, 4, 3, 2, 1]  </span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">//[5, 4, 3, 2, 1]</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>sort()</strong><br>按ascii码排序<br>改变原数组，返回排序后的数组。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">15</span>, <span class="number">5</span>, <span class="number">10</span>];  </span><br><span class="line"><span class="keyword">var</span> b = a.sort();  </span><br><span class="line"><span class="built_in">console</span>.log(a);  <span class="comment">//[0, 1, 10, 15, 5]  </span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">//[0, 1, 10, 15, 5]</span></span><br></pre></td></tr></table></figure>
+
+<p>因为sort()并不是根据数字的大小来排序，所以这种结果往往不是我们想要的，那么怎样可以使其按照数字大小来排序呢？<br>sort()方法可以接收一个比较函数作为参数，  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">compare</span>(<span class="params">value1, value2</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (value1 &lt; value2) &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="keyword">if</span> (value1 &gt; value2) &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> a = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">15</span>, <span class="number">5</span>, <span class="number">10</span>];  </span><br><span class="line"><span class="keyword">var</span> b = a.sort(compare);  </span><br><span class="line"><span class="built_in">console</span>.log(a);  <span class="comment">//[0, 1, 5, 10, 15] </span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">//[0, 1, 5, 10, 15]</span></span><br></pre></td></tr></table></figure>
+
+<p>上面这个例子就实现了数值的正序排序，倒序只需将比较函数中的返回值交换即可。</p>
+
       
     </div>
     
@@ -316,7 +334,7 @@
   <div class="outer">
     <div id="footer-info">
       <div class="footer-left">
-        &copy; 2019 tengyang
+        &copy; 2019 7rainbows
       </div>
         <div class="footer-right">
           <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
